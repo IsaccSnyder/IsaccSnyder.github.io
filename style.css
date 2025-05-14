@@ -39,6 +39,10 @@ a {
   color: #fff;
 }
 
+.toptext {
+  color: #fff;
+}
+
 /* main container area beneath menu */
 main {
   background: rgb(245, 238, 219);
