@@ -3,5 +3,5 @@
     "*.md": "vscode.markdown.preview.editor",
     "*.CR2": "default"
   },
-  "liveServer.settings.port": 5503
+  "liveServer.settings.port": 5505
 }

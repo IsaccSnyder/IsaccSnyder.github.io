@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(65, 64, 64);
+}
+
+#die {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(134, 125, 255); /* Feel free to customize */
+  position: relative;
+}
