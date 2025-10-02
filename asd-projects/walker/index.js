@@ -13,6 +13,26 @@ function runProgram(){
   
   // Game Item Objects
 
+  $(document).on("keydown", handleKeyDown);
+
+  const KEY = { // The second key names repesents the arror keys if someone wants to use them
+    ENTER: 13,
+    LEFT: 65,
+    LEFT2: 37,
+    UP: 87,
+    UP2: 38,
+    RIGHT: 68,
+    RIGHT2: 39,
+    DOWN: 83,
+    DOWN2: 40,
+  }
+
+  var walker = {
+    x: 0, // Left/Right
+    y: 0, // Up/Down
+    speedX: 0, // Horizontal speed
+    speedY: 0, // Vertical speed
+  }
 
   // one-time setup
   var interval = setInterval(newFrame, FRAMES_PER_SECOND_INTERVAL);   // execute newFrame every 0.0166 seconds (60 Frames per second)
@@ -44,8 +64,25 @@ function runProgram(){
   
   Note: You can have multiple event handlers for different types of events.
   */
-  function handleEvent(event) {
-
+  function handleKeyDown(event) {
+    console.log(event.which)
+    if (event.which === KEY.LEFT) {
+      console.log('left pressed')
+    } else if (event.which === KEY.LEFT2) {
+      console.log('left arror pressed')
+    } else if (event.which === KEY.RIGHT) {
+      console.log('right pressed')
+    } else if (event.which === KEY.RIGHT2) {
+      console.log('right arror pressed')
+    } else if (event.which === KEY.UP) {
+      console.log('up pressed')
+    } else if (event.which === KEY.UP2) {
+      console.log('up arror pressed')
+    } else if (event.which === KEY.DOWN) {
+      console.log('down pressed')
+    } else if (event.which === KEY.DOWN2) {
+      console.log('down arror pressed')
+    }
   }
 
   ////////////////////////////////////////////////////////////////////////////////
